@@ -36,7 +36,7 @@ let fruttaEs = document.getElementById('frutta')
 if (trovato){
     fruttaEs.innerHTML= 'Trovato! Devo solo preparare il cocktail.'
 }else{
-    fruttaEs.innerHTML= 'Oh no, devo uscire a comprare il cocomero!'
+    fruttaEs.innerHTML= 'Oh no, devo uscire a comprare la frutta!'
 }
 
 })
