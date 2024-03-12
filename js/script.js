@@ -13,8 +13,30 @@
 //    - se non lo trovo: "Oh no, devo uscire a comprare il cocomero!"
 
 
-let frigo = ['banana', 'mela', 'pera', 'ciliegia', 
+
+let fgame = document.getElementById('fruitgame')
+fgame.addEventListener('click', function(){
+ let frigo = ['banana', 'mela', 'pera', 'ciliegia', 
 'arancia', 'mandarino', 'cocomero', 'limone', 'fragola'
-]
+ ]
+frigo.unshift('pesca');
+let search = document.getElementById('searchfruit').value
 
 let trovato = false;
+
+
+for(let i = 0 ; i < frigo.length ; i++){
+    if(search === frigo[i]){
+        trovato = true;
+    }
+}
+
+let fruttaEs = document.getElementById('frutta')
+
+if (trovato){
+    fruttaEs.innerHTML= 'Trovato! Devo solo preparare il cocktail.'
+}else{
+    fruttaEs.innerHTML= 'Oh no, devo uscire a comprare il cocomero!'
+}
+
+})
