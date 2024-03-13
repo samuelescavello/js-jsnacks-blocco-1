@@ -39,4 +39,4 @@ if (trovato){
     fruttaEs.innerHTML= 'Oh no, devo uscire a comprare la frutta!'
 }
 
-})
+}) 

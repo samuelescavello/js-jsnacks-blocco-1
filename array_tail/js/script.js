@@ -15,17 +15,25 @@ bottone.addEventListener('click', function(){
 
     let numarray = [];
     let user = document.getElementById('inputcoda').value;
+    let user2 = document.getElementById('inputcoda2').value;
     for (let i = 0 ; i < user ; i++ ){
         numarray.push( getRndInteger(1, 100));
     }
+    if (user < user2){
+        testo.innerHTML = 'ATTENZIONE il numero da stampare deve essere minore del numero totale'
+    }else {
+        let newarray = numarray.slice(-user2);
+        testo.innerHTML = newarray
+    }
 
-    console.log(numarray);
-    let newarray= numarray.slice(-5);
-    console.log(newarray)
-    console.log(testo)
-    testo.innerHTML = newarray
+    
 
 })
+
+
+
+
+
 
 
 function getRndInteger(min, max) {
