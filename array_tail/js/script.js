@@ -14,8 +14,8 @@ let testo = document.getElementById('testo')
 bottone.addEventListener('click', function(){
 
     let numarray = [];
-    let user = document.getElementById('inputcoda').value;
-    let user2 = document.getElementById('inputcoda2').value;
+    let user = parseInt(document.getElementById('inputcoda').value);
+    let user2 = parseInt(document.getElementById('inputcoda2').value);
     for (let i = 0 ; i < user ; i++ ){
         numarray.push( getRndInteger(1, 100));
     }
